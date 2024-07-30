@@ -1,0 +1,24 @@
+@import url('react-date-range/dist/styles.css');
+@import url('react-date-range/dist/theme/default.css');
+
+.rdrDateRangePickerWrapper {
+    @apply top-1.5 z-[15] min-h-screen w-full border-gray-300 shadow-lg sm:absolute sm:w-auto sm:overflow-hidden sm:rounded-lg sm:border;
+}
+
+.rdrDefinedRangesWrapper,
+.rdrDateDisplayWrapper {
+    @apply hidden;
+}
+
+.rdrDateRangeWrapper,
+.rdrCalendarWrapper {
+    @apply mt-0 w-full px-4 !important;
+}
+
+.rdrMonthAndYearWrapper {
+    @apply sm:text-sm lg:text-base;
+}
+
+.rdrMonths {
+    @apply flex flex-col items-center sm:text-sm min-[860px]:flex-row min-[860px]:items-start lg:text-base;
+}

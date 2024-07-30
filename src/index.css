@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('lightbox2/dist/css/lightbox.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: #011830;
+}
+
+/* custom transitions */
+.custom-transition {
+    transition: all 400ms ease-in-out;
+}
+
+.text-transition {
+    transition: all 200ms ease-in-out;
+}
+
+@layer components {
+    /* cta-btn with animation  */
+    .cta-btn {
+        @apply relative flex items-center justify-center gap-1 overflow-hidden rounded-md p-2 text-center text-[14px] font-semibold capitalize outline-none focus:ring-2 focus:ring-blue/50 md:p-3;
+    }
+
+    .cta-btn::before {
+        content: '';
+        @apply absolute left-0 h-[400px] w-2 -translate-x-[30px] rotate-[20deg] bg-white opacity-60 blur-md transition-all duration-500 ease-linear;
+    }
+
+    .cta-btn:hover::before,
+    .cta-btn:focus::before {
+        @apply left-full translate-x-[30px] rotate-[20deg];
+    }
+
+    .footer-link {
+        @apply text-transition text-gray-500 outline-none hover:text-yellow focus:text-yellow;
+    }
+
+    .footer-social-icon {
+        @apply text-transition flex h-8 w-8 items-center justify-center rounded bg-blue/5 p-2 text-lg text-gray-400 hover:bg-blue hover:text-white focus:bg-blue focus:text-white;
+    }
+
+    .login-social-icon {
+        @apply text-transition flex h-14 w-14 items-center justify-center rounded border-[1px] border-dashed p-3 hover:bg-indigo-50 focus:bg-indigo-50;
+    }
+}
