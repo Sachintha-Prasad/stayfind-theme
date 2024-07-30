@@ -1,6 +1,20 @@
-# StayFind theme file
+# StayFind Theme File
 
 StayFind is a modern and responsive hotel and destination booking application theme. Built with React and Tailwind CSS, this project offers a sleek and intuitive user interface designed to enhance the user experience. This repository contains the theme file for a client project.
+
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+  - [Home Page](#home-page)
+  - [Destination Details](#destination-details)
+  - [Hotels List](#hotels-list)
+  - [Hotel Details](#hotel-details)
+  - [Contact](#contact)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
@@ -48,9 +62,27 @@ To set up the project locally, follow these steps:
 
 This theme is designed for hotel and destination booking websites. Customize the components and styles as per the client's requirements. Refer to the Tailwind CSS documentation for further customization options.
 
-## Contributing
+## Screenshots
 
-Contributions are welcome! Please fork this repository and submit a pull request with your changes.
+### Home Page
+![Home Page](screenshots/home.jpeg)
+*The landing page showcasing featured destinations and hotels.*
+
+### Destination Details
+![Destination Details](screenshots/destinations.jpeg)
+*Detailed information about destinations, including amenities and reviews.*
+
+### Hotels List
+![Hotels List](screenshots/hotel-list.jpeg)
+*A list of available hotels for selected destinations, with filtering options.*
+
+### Hotel Details
+![Hotel Details](screenshots/hotel.jpeg)
+*Comprehensive details about a specific hotel, including room options and user reviews.*
+
+### Contact
+![Contact](screenshots/contact.jpeg)
+*The contact page where users can get in touch with support or make inquiries.*
 
 ## License
 
